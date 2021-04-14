@@ -1,0 +1,144 @@
+html {
+    background: linear-gradient(rgb(24,69,59), rgb(255,255,255)) no-repeat;
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+.flex {
+    height: 90%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    top: 2em;
+}
+
+#matrix-space {
+    left: 0;
+}
+
+input {
+    background-color: rgb(24,69,59);
+    color: white;
+}
+
+#graph-space {
+    right: 0;
+}
+
+#graph-space svg {
+    background: rgb(24,69,59);
+    background: radial-gradient(circle, rgb(24,69,59) 53%, transparent 72%);
+}
+
+circle.node:hover {
+    fill: #ff00f0;
+}
+
+div {
+	margin: 1em auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+#size-form {
+    display: flex;
+    padding-left: 1em;
+}
+
+table {
+    table-layout: auto;
+    border-collapse:collapse;
+    margin: auto;
+    padding: 1em;
+}
+
+table td {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#matrix {
+    overflow: auto;
+    padding-left: 2em;
+}
+
+#matrix th {
+	width: auto;
+	border-bottom: 1px solid black;
+}
+
+#matrix td {
+	width: 1em;
+	padding: 0.2em;
+}
+
+#matrix input {
+    width: 4em;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 0;
+}
+
+#matrix input:disabled {
+    background-color: #17420b;
+    border: 1px solid grey;
+}
+
+#matrix .rhead {
+	border-right: 1px solid black;
+	font-weight: bold;
+}
+
+#graph-space {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(24,69,59);
+    height: 3em;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+header p {
+    height: 100%;
+}
+
+header .header-text {
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(24,69,59);
+    height: 2em;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    position: fixed;
+    align-items: center;
+    text-align: right;
+}
+
+#matrix caption {
+    color: white;
+}
